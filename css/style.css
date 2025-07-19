@@ -1,5 +1,5 @@
 :root { 
-    --fuenteMeding: 'PT Sans' sans-serif;
+    --fuenteHeading: 'PT Sans' sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
     --primario:#784D3C;
@@ -63,13 +63,22 @@ img{
 
 }
 /**Header**/
+.webp.header {
+background-image: url(../img/banner.webp);
+}
+.no-webp.header {
+ background-image: url(../img/banner.jpg);
+
+}
 .header {
-    background-image: url(../img/banner.jpg);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center center;
 
+}
+.header {
+  background-image: url(../img/banner.jpg); /* Prueba directa */
 }
 
 .header__texto {
@@ -78,19 +87,18 @@ img{
     margin-top:5rem;
 
 }
-.barra{
-    padding-top: 4rem ;
-}
+
 @media (min-width:768px)  {
     .header__texto{
         margin-top:15rem;
     }
 
 }
- .barra{
-    padding-top: 4rem;
- }   
+.barra{
+    padding-top: 4rem ;
+}
 
+ 
 @media (min-width:768px){
     .barra{
         display:flex;
